@@ -13,7 +13,7 @@ namespace Whush.Demo.Styles.VS2012
             Window window = ((FrameworkElement)templateFrameworkElement).TemplatedParent as Window;
             if (window != null) action(window);
         }
-
+       
         public static IntPtr GetWindowHandle(this Window window)
         {
             WindowInteropHelper helper = new WindowInteropHelper(window);
